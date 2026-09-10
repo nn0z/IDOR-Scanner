@@ -179,9 +179,7 @@ class IDORScanner:
 
 🌐 <b>Target URL:</b> <code>{self.base_url}</code>
 ⏱️ <b>Scan Duration:</b> {minutes}m {seconds}s
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━
 📈 <b>SCAN STATISTICS:</b>
 ├ 📄 Pages Discovered: {len(self.discovered_urls)}
 ├ 🔗 Query ID Endpoints: {len(self.all_get_params)}
@@ -191,19 +189,15 @@ class IDORScanner:
 ├ ✅ Real IDORs Found: <b>{len(self.real_idors)}</b>
 ├ ⚠️ Potential IDORs: {len(self.potential_idors)}
 └ ❌ False Positives Filtered: {self.false_positives}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+━━━━━━━━━━━━━━━━━━━━
 🛡️ <b>SECURITY ASSESSMENT:</b>
 ├ Score: <b>{security_score}%</b>
 └ Status: {security_level}
 {idor_list}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<i>🤖 Scan performed by neutron IDOR Scanner</i>
-
-<a href="https://github.com/nn0z/">🔗 <b>Github</b></a>
-<a href="https://www.instagram.com/e1z/">🔗 <b>Instagram</b></a>
+━━━━━━━━━━━━━━━━━━━━
+<i>Scan performed by neutron IDOR Scanner</i>
+<a href="https://github.com/nn0z/"><b>- Github</b></a>
+<a href="https://www.instagram.com/e1z/"><b>- Instagram</b></a>
         """
 
         self.send_telegram_message(message)
