@@ -175,9 +175,7 @@ class IDORScanner:
                 idor_list += f"   <b>Swapped:</b> {vuln.get('original_id', 'N/A')} → {vuln.get('test_id', 'N/A')}\n"
 
         message = f"""
-╔══════════════════════════════════════════════════════════════╗
-║              📊 IDOR SCAN COMPLETE REPORT                    ║
-╚══════════════════════════════════════════════════════════════╝
+               📊 IDOR SCAN COMPLETE REPORT                    
 
 🌐 <b>Target URL:</b> <code>{self.base_url}</code>
 ⏱️ <b>Scan Duration:</b> {minutes}m {seconds}s
