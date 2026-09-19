@@ -197,7 +197,6 @@ class IDORScanner:
 ━━━━━━━━━━━━━━━━━━━━
 <i>Scan performed by neutron IDOR Scanner</i>
 <a href="https://github.com/nn0z/"><b>- Github</b></a>
-<a href="https://www.instagram.com/e1z/"><b>- Instagram</b></a>
         """
 
         self.send_telegram_message(message)
